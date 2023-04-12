@@ -54,7 +54,7 @@ header {
   background-color: rgba(240, 235, 228, 0.269);
   font-family: lobster;
   color: rgba(100, 78, 49, 0.893);
-  font-size:larger;
+  font-size: larger;
   text-shadow: 2px 2px 4px #f9f9f9;
   min-height: 92vh;
   display: flex;
@@ -64,7 +64,6 @@ header {
   flex-direction: row;
   text-align: center;
   padding: 5px 50px 5px 50px;
-
 }
 
 /* ABOUT ME SECTION */
@@ -77,7 +76,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  text-align:left;
+  text-align: left;
   padding: 5px 150px 5px 150px;
 }
 
@@ -89,7 +88,15 @@ header {
   float: left;
   border-radius: 30px;
   opacity: 70%;
-  box-shadow:0 4px 8px 0 rgba(243, 241, 241, 0.92), 0 6px 20px 0 rgb(255, 255, 255);;
+  box-shadow: 0 4px 8px 0 rgba(243, 241, 241, 0.92),
+    0 6px 20px 0 rgb(255, 255, 255);
+  transition: width 2s, height 2s, transform 2s; /* Transition image */
+}
+
+.aboutMe img:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
 }
 
 /* PORTFOLIO SECTION */
@@ -102,7 +109,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  text-align:center;
+  text-align: center;
   padding: 5px 125px 5px 125px;
 }
 
@@ -118,6 +125,10 @@ header {
 }
 
 /* CONTACT FORM SECTION */
+article {
+  width: 30%;
+}
+
 .form {
   background-color: rgba(240, 235, 228, 0.269);
   color: rgba(100, 78, 49, 0.872);
@@ -125,9 +136,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  text-align:center;
-  /* padding: 5px 50px 5px 50px; */
+  flex-direction: row;
+  text-align: center;
 }
 
 form {
@@ -138,13 +148,22 @@ form {
   border-width: 2.5px;
   border-radius: 5px;
   padding: 5px;
-  box-shadow:0 4px 8px 0 rgba(243, 241, 241, 0.92), 0 6px 20px 0 rgb(255, 255, 255);;
-  
+  box-shadow: 0 4px 8px 0 rgba(243, 241, 241, 0.92),
+    0 6px 20px 0 rgb(255, 255, 255);
+  box-sizing: border-box;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type="text"] [type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   background-color: rgba(100, 78, 49, 0.749);
-  border-style:none;
+  border-style: none;
   border-width: 1px;
   border-radius: 5px;
   color: white;
@@ -155,11 +174,12 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 /* SUBMISSION SECTION */
-.submission{
+.submission {
+  background-image: url("flowerpaper.jpg");
   background-color: rgba(240, 235, 228, 0.269);
   font-family: lobster;
   color: rgba(100, 78, 49, 0.893);
-  font-size:larger;
+  font-size: larger;
   text-shadow: 2px 2px 4px #f9f9f9;
   min-height: 92vh;
   display: flex;
@@ -168,4 +188,13 @@ input[type=button], input[type=submit], input[type=reset] {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+/* MEDIA SECTION */
+@media only screen and (min-width: 400px) and (max-width: 1680px) {
+  body {
+    /*Font*/
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
 }
