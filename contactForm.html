@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactForm</title>
+    <script src="javascriptForm.js"></script> <!--javascript form activation-->
+    <link rel="stylesheet" href="style.css" /> <!--css activation-->
+    </head>
+  <body>
+    <div class="body">
+      <header>
+        <h1>Elsa</h1>
+        <!--links for home/about/portfolio pages-->
+        <nav class="navigation">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="contactForm.html">CONTACT</a>
+        </nav>
+      </header>
+    </div>
+    <!-- Form -->
+    <div class="form">
+    <article>
+      <h2>Let's connect!</h2><br>
+      <form action="formSubmited.html">
+        <!-- input first name -->
+        <label for="name">First Name</label><br />
+        <input type="text" id="name" name="First name" /><br />
+
+        <!-- input last name -->
+        <label for="lname">Last Name</label><br />
+        <input type="text" id="lname" name="Last name" /><br />
+
+        <!-- email -->
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <!-- submit buttom -->
+        <input type="submit" value="submit" />
+      </form>
+    </article>
+  </div>
+  </body>
+</html>

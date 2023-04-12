@@ -1,24 +1,223 @@
+/* MAIN BODY */
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 html {
-    scroll-padding-top: 4rem;
-  }
-  nav {
-    height: 3rem;
-    top: 10px;
-    text-align: center;
-    color: rgba(100, 78, 49, 0.872);
-    width: auto;
-    padding-bottom: 35px;
-    padding-top: 30px;
-        
-  }
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(109, 88, 60, 0.792);
+}
 
+body {
+  margin: 0px 100px 0px 100px;
+  background-color: rgb(211, 198, 179);
+  min-height: 100vh;
+  color: rgba(109, 88, 60, 0.792);
+}
+
+/* NAVIGATION BAR */
+.body {
+  min-height: 9vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgba(109, 88, 60, 0.792);
+  padding: 0px 5px 0px 5px;
+  border-radius: 20px;
+  margin: 0px 15px 0px 5px;
+  font-weight: 600;
+}
+/* Links - change color on hover */
+.navigation a:hover {
+  background-color: rgba(109, 88, 60, 0.792);
+  color: whitesmoke;
+}
+
+/* HOME SECTION */
+.home {
+  background-color: rgba(240, 235, 228, 0.269);
+  font-family: lobster;
+  color: rgba(100, 78, 49, 0.893);
+  font-size:larger;
+  text-shadow: 2px 2px 4px #f9f9f9;
+  min-height: 92vh;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* ABOUT ME SECTION */
+.aboutMe {
+  background-color: rgba(240, 235, 228, 0.269);
+  color: rgba(100, 78, 49, 0.872);
+  min-height: 92vh;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align:left;
+  padding: 5px 90px 5px 90px;
+}
+
+.aboutMe img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  position: sticky;
+  float: left;
+  border-radius: 30px;
+  opacity: 70%;
+  box-shadow:0 4px 8px 0 rgba(243, 241, 241, 0.92), 0 6px 20px 0 rgb(255, 255, 255);;
+}
+
+/* PORTFOLIO SECTION */
+.workExperience {
+  background-color: rgba(240, 235, 228, 0.269);
+  color: rgba(100, 78, 49, 0.872);
+  min-height: 92vh;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align:center;
+  padding: 5px 100px 5px 100px;
+}
+
+.workExperience img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  position: sticky;
+  float: left;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  opacity: 40%;
+}
+
+/* CONTACT FORM SECTION */
+
+.form {
+  background-color: rgba(240, 235, 228, 0.269);
+  color: rgba(100, 78, 49, 0.872);
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center;
+  /* padding: 5px 50px 5px 50px; */
+}
+
+form {
+  text-align: center;
+  background-color: rgba(100, 78, 49, 0.201);
+  border-style: ridge;
+  border-color: rgba(240, 248, 255, 0.139);
+  border-width: 2.5px;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow:0 4px 8px 0 rgba(243, 241, 241, 0.92), 0 6px 20px 0 rgb(255, 255, 255);;
   
-  body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgba(246, 217, 182, 0.644);
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: rgba(100, 78, 49, 0.749);
+  border-style:none;
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+  padding: 12px 32px;
+  text-decoration: none;
+  margin: 6px 2px;
+  cursor: pointer;
+}
+
+.submission{
+  background-color: rgba(240, 235, 228, 0.269);
+  font-family: lobster;
+  color: rgba(100, 78, 49, 0.893);
+  font-size:larger;
+  text-shadow: 2px 2px 4px #f9f9f9;
+  min-height: 92vh;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* .aboutMeImage {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  position: sticky;
+  float: left;
+} */
+
+/* .aboutMe h1 {
+  text-align: right;
+  color: rgba(100, 78, 49, 0.872);
+  background-color: rgba(212, 189, 160, 0.644);
+  padding-right: 15px;  
+
+ */
+
+/* input[type=button], input[type=submit], input[type=reset] {
+    background-color: rgba(250, 235, 215, 0.326);
+    border-style:none;
+    border-width: 1px;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .work1 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    position:relative;
   }
 
-  h1 {
+  .work2 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    position: relative;
+  }
+  
+  .work3 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    position: relative;
+  } */
+
+/* h1 {
     text-align: right;
     color: rgba(100, 78, 49, 0.872);
     background-color: rgba(212, 189, 160, 0.644);
@@ -39,7 +238,6 @@ html {
     width: auto;
     padding: 25px;
     margin: auto;
-    
   }
 
   p {
@@ -57,5 +255,6 @@ html {
     object-fit: cover;
     position: sticky;
     float: left;
-  }
-  
+  } */
+
+
