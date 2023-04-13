@@ -4,3 +4,7 @@
 # 3. Have one more than one commit with descriptive commit messages.
 # 4. Included a descriptive Readme file.
 # 5. Created five functional files with basic html, css and javascript functionality.
+
+# UPDATES!!!
+# 6. Added a contact form.
+# 7. Added advanced CSS items like flex,
