@@ -49,7 +49,7 @@ header {
   color: whitesmoke;
 }
 
-/* HOME SECTION */
+/* HOME/INDEX SECTION */
 .home {
   background-color: rgba(240, 235, 228, 0.269);
   font-family: lobster;
@@ -63,6 +63,8 @@ header {
   justify-content: center;
   flex-direction: row;
   text-align: center;
+  padding: 5px 50px 5px 50px;
+
 }
 
 /* ABOUT ME SECTION */
@@ -71,12 +73,12 @@ header {
   color: rgba(100, 78, 49, 0.872);
   min-height: 92vh;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   text-align:left;
-  padding: 5px 90px 5px 90px;
+  padding: 5px 150px 5px 150px;
 }
 
 .aboutMe img {
@@ -96,12 +98,12 @@ header {
   color: rgba(100, 78, 49, 0.872);
   min-height: 92vh;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   text-align:center;
-  padding: 5px 100px 5px 100px;
+  padding: 5px 125px 5px 125px;
 }
 
 .workExperience img {
@@ -116,7 +118,6 @@ header {
 }
 
 /* CONTACT FORM SECTION */
-
 .form {
   background-color: rgba(240, 235, 228, 0.269);
   color: rgba(100, 78, 49, 0.872);
@@ -153,6 +154,7 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
+/* SUBMISSION SECTION */
 .submission{
   background-color: rgba(240, 235, 228, 0.269);
   font-family: lobster;
